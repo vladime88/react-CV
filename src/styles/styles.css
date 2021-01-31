@@ -19,3 +19,76 @@ button {
 li {
   list-style-type: none;
 }
+
+a {
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+}
+
+a:visited {
+  color: #333;
+}
+
+.home, .knowledges, .portfolio, .contact {
+  display: flex;
+}
+
+@media screen and (max-width: 850px) {
+  .home, .knowledges, .portfolio, .contact {
+    display: block !important;
+  }
+}
+
+.homeContent, knowledgesContent, .portfolioContent, .contactContent {
+  margin-left: 4rem;
+}
+
+@media screen and (max-width: 850px) {
+  .homeContent, knowledgesContent, .portfolioContent, .contactContent {
+    margin-left: 0 !important;
+  }
+}
+
+.sidebar {
+  background: #2a1d52;
+  font-family: "Nova Round", cursive;
+  height: 100%;
+  min-height: 95vh;
+  min-width: 264px;
+  border-radius: 25px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 250px 1fr 108px;
+  grid-template-areas: "1" "2" "3";
+}
+
+.sidebar .id {
+  grid-area: 1;
+  text-align: center;
+  user-select: none;
+  position: relative;
+}
+
+.sidebar .id .idContent {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+.sidebar .id .idContent img {
+  max-width: 50%;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px #63a4e9, 0 0 0 8px #4FEDD2, 0 0 0 12px #6C77F4;
+}
+
+.sidebar .id .idContent h3 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  margin-top: 1.5rem;
+  color: #36D0EA;
+}
