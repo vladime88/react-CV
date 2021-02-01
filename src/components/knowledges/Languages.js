@@ -29,7 +29,7 @@ class Languages extends Component {
             />
             <ProgressBar
             languages={frameworks}
-            title="frameworks $ bibliotèques"
+            title="frameworks & bibliotèques"
             className="frameworksDisplay"
             
             />
