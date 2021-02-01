@@ -92,3 +92,133 @@ a:visited {
   margin-top: 1.5rem;
   color: #36D0EA;
 }
+
+.sidebar .navigation {
+  grid-area: 2;
+  padding: 2rem 1rem;
+}
+
+.sidebar .navigation ul {
+  height: 100%;
+  display: grid;
+}
+
+.sidebar .navigation ul li {
+  padding: 1rem 0 1rem .4rem;
+  font-size: 1.3rem;
+  position: relative;
+}
+
+.sidebar .navigation ul li:hover i {
+  transform: translate(3px, 3px);
+}
+
+.sidebar .navigation ul li a {
+  color: #36D0EA;
+}
+
+.sidebar .navigation ul li .navActive {
+  color: #4FEDD2;
+}
+
+.sidebar .navigation ul li i {
+  position: absolute;
+  font-size: 0.95rem;
+  transform: translateY(3px);
+  transition: .2s ease;
+}
+
+.sidebar .navigation ul li span {
+  margin-left: 2.7rem;
+}
+
+.sidebar .socialNetwork {
+  grid-area: 3;
+}
+
+.sidebar .socialNetwork ul {
+  display: flex;
+  width: 264px;
+  padding: 0 14px;
+  justify-content: space-between;
+}
+
+.sidebar .socialNetwork ul li {
+  font-size: 1.5rem;
+  background: #36D0EA;
+  color: #2a1d52;
+  border-radius: 50%;
+  padding: .5rem 0.8rem;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.sidebar .socialNetwork ul li a:visited {
+  color: #2a1d52;
+}
+
+.sidebar .socialNetwork ul li:nth-child(1) {
+  padding: .5rem .85rem;
+}
+
+.sidebar .socialNetwork ul li:nth-child(4) {
+  padding: .5rem .75rem;
+}
+
+.sidebar .socialNetwork ul li:hover {
+  background: #4FEDD2;
+}
+
+.sidebar .socialNetwork .signature {
+  margin-top: 2rem;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  font-size: .7rem;
+}
+
+.sidebar .socialNetwork .signature a, .sidebar .socialNetwork .signature a:visited {
+  color: #36D0EA;
+}
+
+.sidebar .socialNetwork .signature a:hover, .sidebar .socialNetwork .signature a:visited:hover {
+  color: #4FEDD2;
+}
+
+@media screen and (max-width: 850px) {
+  .sidebar {
+    display: flex;
+    min-height: 50px;
+    margin-bottom: .2rem;
+    width: 100%;
+  }
+  .sidebar .id, .sidebar .socialNetwork {
+    display: none;
+  }
+  .sidebar .navigation {
+    width: 100%;
+    padding: .1rem 1rem;
+  }
+  .sidebar .navigation ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .sidebar .navigation ul span {
+    margin-left: 1.5rem !important;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .sidebar ul {
+    justify-content: space-around !important;
+  }
+  .sidebar ul li {
+    padding: 1rem 0 !important;
+  }
+  .sidebar ul i {
+    font-size: 1.4rem !important;
+    transform: translateY(-3px) !important;
+  }
+  .sidebar ul span {
+    display: none;
+  }
+}
