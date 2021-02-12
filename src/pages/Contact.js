@@ -17,22 +17,22 @@ const Contact = () => {
                  </li>
                  <li>
                      <i className="fas fa-mobile-alt"></i>
-                     <CopyToClipboard text="+33(0)695324688">
+                     <CopyToClipboard text="+33(0)134611472">
                          <span 
                          className="clickInput"
                          onClick={() => { alert('Téléphone copié !');}}
                          
-                         >+33 (0)6 95 32 46 88</span>
+                         >+33 (0)134611472</span>
                      </CopyToClipboard>
                  </li>
                  <li>
                      <i className="far fa-envelope"></i>
-                     <CopyToClipboard text="vladime@gmail.com">
+                     <CopyToClipboard text="gmail.com">
                          <span 
                          className="clickInput"
                          onClick={() => { alert('E-Mail copié !');}}
                          
-                         >vladime@gmail.com</span>
+                         >Bobby@gmail.com</span>
                      </CopyToClipboard>
                  </li>
              </ul>
